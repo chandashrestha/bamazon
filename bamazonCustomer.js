@@ -24,7 +24,7 @@ function inventory() {
     console.log("=========================");
     for (i = 0; i < res.length; i++) {
       console.log(
-        "Item ID:" +
+        "Product ID:" +
           res[i].product_id +
           "   Product Name: " +
           res[i].product_name +
@@ -37,7 +37,7 @@ function inventory() {
           res[i].stock_quantity
       );
       console.log(
-        "------------------------------------------------------------------------------------------------------------------------"
+        "----------------------------------------------------------------------------------------------------"
       );
     }
 
@@ -51,14 +51,14 @@ function inquiry(res) {
             {
                 name: "product_id",
                 type: "input",
-                message: "Enter the item number you wish to buy: ", 
+                message: "Enter the Product ID you wish to buy: ", 
                 validate: function (value) {
                     var valid = value.match(/^[0-9]*$/)
                     if (valid) {
                         if(valid <= res.length) {
                             return true
                         } else {
-                            return "This Item Number does not exist!"
+                            return "This Product ID does not exist!"
                         }
                     } else {
                         return "Please enter a valid Product ID"
@@ -84,7 +84,7 @@ function inquiry(res) {
                 function (err, res) {
                     if (answer.quantityOrdered > res[0].stock_quantity) {
                         console.log("==========================================");
-                        console.log("Available quantity is lesser than requested quantity!");
+                        console.log("Insufficient quantity!");
                         console.log("==========================================");
                         nextTransaction();
                     }
@@ -113,7 +113,7 @@ function nextTransaction() {
     inquirer.prompt([{
         type: "confirm",
         name: "another",
-        message: "Would you like to purchase another item ?"
+        message: "Would you like to purchase another Product ?"
     }]).then(function (answer) {
         if (answer.another) {
             inventory()

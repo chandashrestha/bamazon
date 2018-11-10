@@ -1,44 +1,18 @@
 Node.js & MySQL
+
 CLI App -- Online purchase app
-Place your orders with this app from the available products. After the order is placed, the amount will be decreased in the stock from the store's inventory. 
 
-Submission Guide
- This time, though, you need to include screenshots, a gif, and/or a video showing us that you got the app working with no bugs. You can include these screenshots or a link to a video in a README.md file.
+A user can place orders with this app from the list of available products. After the order is placed, the amount will be decreased in the stock from the store's inventory. 
 
-Include screenshots (or a video) of typical user flows through your application (for the customer and if relevant the manager/supervisor). This includes views of the prompts and the responses after their selection (for the different selection options).
+MySQL Database = Bamazondb
 
-Include any other screenshots you deem necessary to help someone who has never been introduced to your application understand the purpose and function of it. This is how you will communicate to potential employers/other developers in the future what you built and why, and to show how it works.
+Node application = bamazonCustomer.js. 
 
-If you haven't written a markdown file yet, click here for a rundown, or just take a look at the raw file of these instructions.
-
-Submission on BCS
-Please submit the link to the Github Repository!
-Instructions
-Challenge #1: Customer View (Minimum Requirement)
-Create a MySQL Database called bamazon.
-
-Then create a Table inside of that database called products.
-
-The products table should have each of the following columns:
-
-item_id (unique id for each product)
-
-product_name (Name of product)
-
-department_name
-
-price (cost to customer)
-
-stock_quantity (how much of the product is available in stores)
-
-Populate this database with around 10 different products. (i.e. Insert "mock" data rows into this database and table).
-
-Then create a Node application called bamazonCustomer.js. Running this application will first display all of the items available for sale. Include the ids, names, and prices of products for sale.
+Running this application will first display all of the items available for sale which includes the ids, names, department prices and quantityof products for sale.
 
 The app should then prompt users with two messages.
-
-The first should ask them the ID of the product they would like to buy.
-The second message should ask how many units of the product they would like to buy.
+1. Enter the ID of the product they would like to buy?
+2. Enter how many units of the product they would like to buy?
 Once the customer has placed the order, your application should check if your store has enough of the product to meet the customer's request.
 
 If not, the app should log a phrase like Insufficient quantity!, and then prevent the order from going through.
