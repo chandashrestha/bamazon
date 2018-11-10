@@ -12,6 +12,7 @@ A user can place orders with this app from the list of available products. After
 
 Running this application will first display all of the items available for sale which includes the ids, names, department prices and quantityof products for sale.
 
+-- First Scenario --
 The app then prompts user with two questions.
 1. Enter the ID of the product they would like to buy?
 2. Enter how many units of the product they would like to buy?
@@ -25,4 +26,12 @@ However, if the store does have enough of the product, it fulfills the customer'
 It updates the SQL database to reflect the remaining quantity.
 Once the update goes through, it shows the customer the total cost of their purchase.
 
-After the successful purchase it will ask you to 
+After the successful purchase it will ask you "Would you like to purchase another Product? (Y/n)
+
+If you choose Y, it will list out the number of available quantities of all the products and you can re-purchase another product.
+
+If you choose n, it will end the purchase and show "Thank you for shopping! Please come again!
+
+-- Second Scenario --
+This Scenario explains about any user errors.
+1. If you enter the Product ID that doesn't exist, it will show "This Product ID does not exists!"
