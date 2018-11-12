@@ -45,4 +45,7 @@ This Scenario explains about wrong product ID.
 This Scenario explains about how to restock the database.
 2. If you would like to restock the database with the initial inventory, you have to run the sql query in the workbench.
 
+Screencastify link below:
+https://drive.google.com/file/d/1A8sfNI-_A_LGSk0AHSHM74X-h46-IlAR/view
+
 The name of the sunglasses are from www.anthropose.com
