@@ -10,12 +10,12 @@ A user can place orders with this app from the list of available products. After
 
 ### Node application = bamazonCustomer.js. 
 
-Running this application will first display all of the items available for sale which includes the ids, names, department prices and quantityof products for sale.
+Running this application will first display all of the items available for sale which includes the ids, names, department, prices and quantity of products for sale.
 
 -- First Scenario --
 The app prompts user with two questions.
-1. Enter the ID of the product they would like to buy?
-2. Enter how many units of the product they would like to buy?
+1. Enter the ID of the product you wish to buy?
+2. Enter how many units of the product you wish to buy?
 
 The app checks if the store has enough of the product to meet the customer's request.
 
@@ -41,7 +41,7 @@ It will end the purchase and show "Thank you for shopping! Please come again!
 This Scenario explains about wrong product ID.
 1. If you enter the Product ID that doesn't exist, it will show "This Product ID does not exists!"
 
--- ThirD Scenario -- (RUN THE APP AGAIN)
+-- Third Scenario -- (RUN THE APP AGAIN)
 This Scenario explains about how to restock the database.
 2. If you would like to restock the database with the initial inventory, you have to run the sql query in the workbench.
 
